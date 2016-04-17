@@ -1,0 +1,219 @@
+// Iphone Device
+$pink: #c99d97;
+$pink-dark: darken($pink, 10%);
+$iphone-width: 15rem;
+$iphone-height: 31rem;
+
+// Ipad Device
+$grey: #0b0b0b;
+$grey-light: lighten($grey,15%);
+#device {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    transition: all .5s ease;
+    .device-top {
+        transition: all .5s ease;
+    }
+    .device-content {
+        transition: all .5s ease;
+    }
+    .device-bottom {
+        text-align: center;
+        .home-btn {
+            transition: all .5s ease;
+            &:after {
+                transition: all .5s ease;
+            }
+        }
+    }
+    span {
+        display: block;
+    }
+    &.macbook {
+        width: 50rem;
+        height: 33rem;
+        border: 5px solid $grey;
+        border-radius: 1.5rem 1.5rem 0 0rem;
+        background: $grey;
+        box-shadow: 0 0 0 2px $grey-light, 0 0 2rem 0 rgba(0, 0, 0, .5);
+        .device-top {
+            padding: .4rem 4.5rem .5rem;
+            text-align: center;
+            .camera {
+                display: block;
+                width: .5rem;
+                height: .5rem;
+                margin: 0 auto .6rem;
+                border-radius: 50%;
+                background: $grey-light;
+            }
+        }
+        .device-content {
+            height: 29.1rem;
+            padding: 0 1.5rem;
+            .screen {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background: url(../images/background2.jpg) center center no-repeat;
+                background-size: auto 100%;
+                box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .2);
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        .device-bottom {
+            .home-btn {
+                position: relative;
+                display: inline-block;
+                width: 68rem;
+                height: 3rem;
+                margin-top: 2rem;
+                margin-left: -9rem;
+                border-radius: 0 0 30% 30%;
+                background: #666;
+                &:after {
+                    position: relative;
+                    display: block;
+                    width: 9rem;
+                    height: 1rem;
+                    margin: 0 auto;
+                    content: '';
+                    border-radius: 0 0 2rem 2rem;
+                    background: lighten(#666, 10%);
+                }
+            }
+        }
+    }
+    &.ipad {
+        width: 30rem;
+        height: 40rem;
+        border: 5px solid $grey;
+        border-radius: 1rem;
+        background: $grey;
+        box-shadow: 0 0 0 2px $grey-light, 0 0 2rem 0 rgba(0, 0, 0, .5);
+        .device-top {
+            padding: 1.2rem 4.5rem 1rem;
+            text-align: center;
+            .camera {
+                display: block;
+                width: .5rem;
+                height: .5rem;
+                margin: 0 auto .6rem;
+                border-radius: 50%;
+                background: $grey-light;
+            }
+        }
+        .device-content {
+            height: 33.5rem;
+            padding: 0 2.5rem;
+            .screen {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background: url(../images/background2.jpg) center center no-repeat;
+                background-size: auto 100%;
+                box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .2);
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        .device-bottom {
+            padding: .5rem 6rem 1rem;
+            .home-btn {
+                position: relative;
+                display: inline-block;
+                width: 2.3rem;
+                height: 2.3rem;
+                border-radius: 50%;
+                &:after {
+                    position: absolute;
+                    top: .1rem;
+                    left: .1rem;
+                    width: 2.1rem;
+                    height: 2.1rem;
+                    content: '';
+                    border-radius: 50%;
+                    background: radial-gradient($grey-light  0%, $grey-light  100%);
+                }
+            }
+        }
+    }
+    &.iphone {
+        width: $iphone-width;
+        height: $iphone-height;
+        border: 5px solid $pink;
+        border-radius: 2rem;
+        background: #f8f8f8;
+        box-shadow: 0 0 0 1px $pink-dark, 0 0 2rem 0 rgba(0, 0, 0, .5);
+        .device-top {
+            padding: .6rem 4.5rem 1.6rem;
+            text-align: center;
+            .camera {
+                display: block;
+                width: .3rem;
+                height: .3rem;
+                margin: 0 auto .6rem;
+                border-radius: 50%;
+                background: $grey-light;
+            }
+            .sensor {
+                float: left;
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                background: $grey-light;
+            }
+            .speakers {
+                display: block;
+                width: 2.4rem;
+                height: .3rem;
+                margin: 0 auto;
+                border-radius: .7rem;
+                background: $grey-light;
+            }
+        }
+        .device-content {
+            height: 23.6rem;
+            padding: 0 .5rem;
+            .screen {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background: url(../images/background2.jpg) center center no-repeat;
+                background-size: auto 100%;
+                box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .2);
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        .device-bottom {
+            padding: .5rem 6rem 1rem;
+            .home-btn {
+                position: relative;
+                display: inline-block;
+                width: 2.3rem;
+                height: 2.3rem;
+                border-radius: 50%;
+                background: $pink-dark;
+                &:after {
+                    position: absolute;
+                    top: .1rem;
+                    left: .1rem;
+                    width: 2.1rem;
+                    height: 2.1rem;
+                    content: '';
+                    border-radius: 50%;
+                    background: radial-gradient(#e6e6e6  0%, #fff  100%);
+                }
+            }
+        }
+    }
+}
